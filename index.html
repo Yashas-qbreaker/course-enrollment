@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Tech Internships</title>
+    <meta name="description" content="Transform your passion for technology into expertise. Join our exclusive internship programs.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <!-- Header with launch badge -->
+            <div class="launch-badge">
+                ✨ Launch Your Tech Career
+            </div>
+            
+            <!-- Main heading -->
+            <h1 class="hero-title">
+                Premium <span class="gradient-text">Tech Internships</span>
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="hero-subtitle">
+                Transform your passion for technology into expertise. Join our exclusive 
+                internship programs and build the skills that top companies demand.
+            </p>
+            
+            <!-- CTA Buttons -->
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToPrograms()">
+                    💻 Start Learning Now
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToPrograms()">
+                    🚀 View All Programs
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <h2 class="section-title">Choose Your Path</h2>
+            <p class="section-subtitle">
+                Select from our carefully curated internship programs designed to accelerate your 
+                career in technology.
+            </p>
+            
+            <!-- Internship Cards Grid -->
+            <div class="programs-grid">
+                <!-- Web Development Card -->
+                <div class="internship-card" data-type="web">
+                    <div class="card-gradient gradient-web"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon">🌐</div>
+                            <h3 class="card-title">Web Development Internship Program</h3>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span class="detail-text">Duration: 1 month/2 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">Location: Virtual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Stipend: -</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Start date: 05/11/2023</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-btn" onclick="viewDetails('web')">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- App Development Card -->
+                <div class="internship-card" data-type="app">
+                    <div class="card-gradient gradient-app"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon">📱</div>
+                            <h3 class="card-title">App Development Internship Program</h3>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span class="detail-text">Duration: 1 month/2 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">Location: Virtual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Stipend: -</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Start date: 05/11/2023</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-btn" onclick="viewDetails('app')">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Python Programming Card -->
+                <div class="internship-card" data-type="python">
+                    <div class="card-gradient gradient-python"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon">🐍</div>
+                            <h3 class="card-title">Python Programming Internship Program</h3>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span class="detail-text">Duration: 1 month/2 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">Location: Virtual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Stipend: -</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Start date: 05/11/2023</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-btn" onclick="viewDetails('python')">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+
+                <!-- Java Programming Card -->
+                <div class="internship-card" data-type="java">
+                    <div class="card-gradient gradient-java"></div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <div class="card-icon">☕</div>
+                            <h3 class="card-title">Java Programming Internship Program</h3>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="detail-item">
+                                <span class="detail-icon">⏱️</span>
+                                <span class="detail-text">Duration: 1 month/2 months</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📍</span>
+                                <span class="detail-text">Location: Virtual</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">💰</span>
+                                <span class="detail-text">Stipend: -</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-icon">📅</span>
+                                <span class="detail-text">Start date: 05/11/2023</span>
+                            </div>
+                        </div>
+                        
+                        <button class="card-btn" onclick="viewDetails('java')">
+                            View Details
+                        </button>
+                    </div>
+                    <div class="card-decoration"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
